@@ -67,7 +67,7 @@ const FunnelStage: React.FC<FunnelStageProps> = ({ stageName, personas, onPerson
 
 export default function Home() {
   const [customerPersonas, setCustomerPersonas] = useState<CustomerPersona[]>([]);
-  const [acquisition, setAcquisition] = useState<CustomerPersona[]>([]);
+  const [acquisition, setAcquisition] = useState<CustomerPersona[]>([    { id: "101", name: "Persona A" },    { id: "102", name: "Persona B" },    { id: "103", name: "Persona C" },  ]);
   const [activation, setActivation] = useState<CustomerPersona[]>([]);
   const [retention, setRetention] = useState<CustomerPersona[]>([]);
   const [referral, setReferral] = useState<CustomerPersona[]>([]);
